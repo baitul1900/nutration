@@ -209,8 +209,7 @@ const TabsOfNutration = () => {
             aria-labelledby="pills-contact-tab"
           >
             <p className="tab-header-sub-pera">
-              বিএমআই 0 হতে ১৮.৯৯ এর মাঝে হলে অপুষ্টি{" "}
-            </p>
+              বিএমআই 0 হতে ১৮.৯৯ এর মাঝে হলে অপুষ্টি{" "}</p>
             <table className="table table-bordered table-responsive">
               <thead>
                 <tr>
