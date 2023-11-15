@@ -223,7 +223,7 @@ const TabsOfNutration = () => {
                 <tr>
                   <td> ০ </td>
                   <td>১৮.৯৯</td>
-                  <td>অপুষ্টি </td>
+                  <td>অপুষ্টি</td>
                 </tr>
               </tbody>
             </table>
