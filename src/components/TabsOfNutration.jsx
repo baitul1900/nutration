@@ -216,7 +216,7 @@ const TabsOfNutration = () => {
                 <tr>
                   <th scope="col">বিএমআই শুরু </th>
                   <th scope="col">বিএমআই শেষ </th>
-                  <th scope="col">অবস্থা </th>
+                  <th scope="col">অবস্থা</th>
                 </tr>
               </thead>
               <tbody>
