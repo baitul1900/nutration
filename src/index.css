@@ -1,0 +1,273 @@
+@import url("https://fonts.googleapis.com/css2?family=Hind+Siliguri:wght@300;400;500;600;700&display=swap");
+
+body {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Hind Siliguri", sans-serif;
+  background-color: var(--bodyColor);
+}
+
+:root {
+  --bodyColor: #fbfbf7;
+  --primaryBodyColor: #9dc84f;
+  --buttonColor: #00526e;
+  --headingColor: #00526e;
+  --fontColorMain: #000;
+  --fontColorSub: #fff;
+  --mainHead: 56px;
+  --subMainHead: 48px;
+  --thirtySix: 36px;
+  --thirtyTwo: 32px;
+  --twentyFour: 24px;
+  --tweenty: 20px;
+  --eighteeen: 18px;
+  --peraMain: 16px;
+  --peraSubMain: 14px;
+}
+
+/* navbar Style */
+.navbar {
+  background-color: var(--primaryBodyColor);
+}
+
+.navbar-nav .nav-item a {
+  color: var(--fontColorSub) !important;
+  font-size: var(--tweenty) !important;
+}
+
+.hero-container {
+  padding-top: 72px;
+  padding-bottom: 80px;
+}
+
+.hero-container .row {
+  background-color: var(--fontColorSub);
+}
+
+.fst-column .container {
+  padding-top: 40px !important;
+}
+.fst-column .container h1 {
+  font-size: var(--mainHead);
+  margin-inline: 32px;
+  font-weight: 700;
+  color: var(--headingColor);
+}
+
+.fst-column .container p {
+  margin-inline: 32px;
+  padding-top: 32px;
+  margin-bottom: 28px;
+  font-weight: 500;
+}
+
+.bmi-button {
+  background-color: var(--buttonColor);
+  color: var(--fontColorSub);
+  margin-inline: 32px;
+  margin-bottom: 64px;
+}
+
+.bmi-button:hover {
+  background-color: var(--primaryBodyColor);
+  color: var(--fontColorSub);
+}
+
+.sec-col {
+  background-color: var(--bodyColor) !important;
+}
+
+.our-activity-sec {
+  background-color: var(--fontColorSub);
+  padding-bottom: 24px;
+}
+
+.our-activity-container h3 {
+  padding-block: 34px !important;
+  font-size: var(--subMainHead);
+  font-weight: 600;
+}
+
+.activity-card {
+  background-color: transparent;
+  border: none;
+}
+
+.activity-card p {
+  font-size: var(--eighteeen);
+  color: var(--fontColorMain);
+  font-weight: 600;
+}
+
+.about-container {
+  padding-top: 120px;
+}
+
+.about-container h3 {
+  padding-bottom: 56px;
+  font-size: var(--subMainHead);
+  font-weight: 600;
+}
+
+.about-description {
+  font-size: var(--eighteeen);
+  font-weight: 500;
+  padding: 40px;
+}
+
+.read-more {
+  background-color: var(--buttonColor);
+  color: var(--fontColorSub);
+  margin-left: 40px;
+  margin-bottom: 40px;
+}
+
+.read-more:hover {
+  background-color: var(--primaryBodyColor);
+  color: var(--fontColorSub);
+  margin-left: 40px;
+  margin-bottom: 40px;
+}
+
+.bmi-row {
+  background-color: var(--fontColorSub);
+}
+
+.bmi-rate {
+  background-color: var(--fontColorSub);
+  text-align: center;
+  border-radius: 9px;
+  font-weight: 600;
+  color: var(--buttonColor);
+}
+
+.calcu-bmi-btn {
+  background: var(--buttonColor) !important;
+  border: none;
+  color: var(--fontColorSub) !important;
+}
+
+.bmi-form {
+  background: var(--primaryBodyColor);
+  border: none;
+}
+
+.bmi-form label {
+  color: var(--fontColorSub);
+  font-size: var(--twentyFour);
+  font-weight: 600;
+}
+
+.bmi-stage {
+  color: var(--fontColorSub);
+  font-size: 16px;
+  font-weight: 500;
+}
+
+.bmi-is-eq {
+  color: var(--headingColor);
+  font-size: var(--peraMain);
+  font-weight: 400;
+  line-height: normal;
+}
+
+.bmi-title {
+  color: #fff;
+  font-size: 32px;
+  font-weight: 600;
+  line-height: normal;
+  text-align: center;
+  padding-top: 29px;
+}
+
+.bmi-one-col h4 {
+  color: #000;
+  font-size: 32px;
+  font-weight: 600;
+}
+
+.bmi-one-col .pera {
+  color: #4a3c3c;
+  font-size: 16px;
+  font-weight: 300;
+}
+
+.bmi-one-col span {
+  color: #252222;
+  font-size: 24px;
+  font-weight: 600;
+}
+
+.bmi-one-col .span-two {
+  color: #252222;
+  font-size: 20px;
+  font-weight: 500 !important;
+  font-family: Poppins;
+}
+
+.tab-header-sub-pera {
+  font-size: var(--twentyFour);
+  font-weight: 500;
+  color: var(--headingColor);
+  font-family: Poppins;
+  word-spacing: 6px;
+}
+
+/* This ensures the card-body takes the full width */
+.pos-two {
+  width: 100%;
+  background: var(--fontColorSub);
+  box-shadow: 0px 4px 4px 5px rgba(0, 0, 0, 0.05);
+  border-radius: 8px;
+}
+
+/* This positions the card within the image */
+.pos-one {
+  position: relative;
+}
+
+/* This positions the card relative to its parent */
+.pos-two {
+  position: absolute;
+  top: 50%;
+  left: 30%;
+  transform: translate(-50%, -50%);
+}
+
+.list-group-item {
+  border: none;
+  background: none;
+  padding: 7px;
+}
+
+.nav-pills .nav-link.active,
+.nav-pills .show > .nav-link {
+  border-radius: 8px;
+  background: #9dc84f;
+  color: var(--fontColorSub);
+  font-size: var(--twentyFour);
+  font-weight: 600;
+}
+
+.nav-pills .nav-link {
+  color: #7e7272;
+  font-size: var(--twentyFour);
+  font-weight: 500;
+}
+
+.problems {
+  font-size: 20px;
+  font-weight: 600;
+}
+
+.svg-thik {
+  width: 20px !important;
+  height: 20px !important;
+}
+
+.nutration-container {
+  border-radius: 16px;
+  background: #9dc84f1a;
+  padding-block: 56px ;
+}
