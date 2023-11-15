@@ -7,12 +7,7 @@ import Box from "@mui/material/Box";
 import CureAndPrevention from "./CureAndPrevention";
 
 const TabsOfNutration = () => {
-  const [value, setValue] = useState("1");
-
-  const handleChange = (event, newValue) => {
-    setValue(newValue);
-  };
-
+  
   return (
     <section className="abt-sec  about-container">
       <h3 className="text-center">
