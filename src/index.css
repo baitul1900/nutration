@@ -285,8 +285,6 @@ body {
   font-weight: 600;
 }
 
-
-
 /* Adjust spacing between images */
 .team-member {
   position: relative;
@@ -302,4 +300,30 @@ body {
   color: white; /* Adjust the text color */
   padding: 10px; /* Add padding as needed */
   box-sizing: border-box; /* Include padding in width/height */
+}
+
+footer {
+  background: var(--primaryBodyColor);
+  padding: 60px 0px 80px 0px;
+}
+
+.subscribe-btn {
+  border-radius: 8px;
+  background: #00526e;
+  color: #fff;
+}
+
+.subscribe-btn:hover {
+  border-radius: 8px;
+  background: #00526e;
+  color: #fff;
+}
+
+
+.active-item {
+  color: #000 !important;
+}
+
+.pending-item {
+  color: #fff;
 }

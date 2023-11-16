@@ -6,6 +6,8 @@ import AboutUs from "../components/AboutUs";
 import BmiCalc from "../components/BmiCalc";
 import TabsOfNutration from "../components/TabsOfNutration";
 import TeamMember from "../components/TeamMember";
+import Footer from "../components/Footer";
+import OurPartner from "../components/OurPartner";
 // import CureAndPrevention from "../components/CureAndPrevention";
 
 const HomePage = () => {
@@ -29,6 +31,8 @@ const HomePage = () => {
       </div>
 
       <TeamMember/>
+      <OurPartner/>
+      <Footer/>
     </Fragment>
   );
 };

@@ -21,8 +21,17 @@ const Navbar = () => {
         <div className="collapse navbar-collapse" id="navbarSupportedContent">
           <div className="container">
             <ul className="navbar-nav d-lfex justify-content-end">
-              <li className="nav-item">
-                  <NavLink to={'/'} className='nav-link'>Home</NavLink>
+              <li className="nav-item nav-link">
+                  <NavLink to={'/'} className={({isActive})=> isActive ? "active-item" : "pending-item"}>Home</NavLink>
+              </li>
+              <li className="nav-item nav-link">
+                  <NavLink to={'/ourDeatils'} className=''>About Us</NavLink>
+              </li>
+              <li className="nav-item nav-link">
+                  <NavLink to={'/blog'} className=''>Blog</NavLink>
+              </li>
+              <li className="nav-item nav-link">
+                  <NavLink to={'/activity'} className=''>Activities</NavLink>
               </li>
             </ul>
           </div>

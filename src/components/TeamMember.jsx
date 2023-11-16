@@ -63,9 +63,9 @@ const TeamMember = () => {
     return (
       <div className='container about-container'>
       <h3 className='text-center'>
-        <span><img src="/src/assets/img/lineicon-left.svg" alt="" /></span>
+        <span> <img src="/src/assets/img/lineicon-left.svg" alt="" /> </span>
         আমাদের স্বেচ্ছাসেবী
-        <span><img src="/src/assets/img/line-icon.svg" alt="" /></span>
+        <span> <img src="/src/assets/img/line-icon.svg" alt="" /> </span>
       </h3>
       <div className="row g-0">
         <div className="col">
