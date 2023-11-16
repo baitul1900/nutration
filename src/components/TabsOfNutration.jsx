@@ -1,12 +1,20 @@
-import Tab from "@mui/material/Tab";
-import TabContext from "@mui/lab/TabContext";
-import TabList from "@mui/lab/TabList";
-import TabPanel from "@mui/lab/TabPanel";
-import { useState } from "react";
-import Box from "@mui/material/Box";
+import { useEffect, useState } from "react";
 import CureAndPrevention from "./CureAndPrevention";
+import axios from "axios";
+import CurePreventionOtipusti from "./CurePreventionOtipusti";
 
 const TabsOfNutration = () => {
+    const [tabelData, setTableData] = useState([]);
+
+    useEffect(()=> {
+        axios.get('/public/data.json')
+        .then(response => {
+            setTableData(response.data.tableDataOtipusti)
+        })
+        .catch(error => {
+            console.error('Error fetching data:', error)
+        })
+    }, [])
   
   return (
     <section className="abt-sec  about-container">
@@ -22,72 +30,7 @@ const TabsOfNutration = () => {
       </h3>
 
       <div className="container text-center">
-        {/* <TabContext value={value}>
-                   
-                        <TabList onChange={handleChange}  aria-label="lab API tabs example" classNameName='d-flex justify-content-between'>
-                            <Tab label="পুষ্টি" value="1" />
-                            <Tab label="অপুষ্টি" value="2" />
-                            <Tab label="অতিপুষ্টি" value="3" />
-                        </TabList>
-                       
-                        <TabPanel value="1">
-                            <p classNameName='tab-header-sub-pera'>বিএমআই   ১৮.৫   হতে   ২৩.৯   এর   মাঝে   হলে   স্বাভাবিক </p>
-                        <table classNameName="table table-bordered table-responsive">
-                            <thead>
-                                <tr>
-                                <th scope="col">বিএমআই শুরু </th>
-                                <th scope="col">বিএমআই শেষ </th>
-                                <th scope="col">অবস্থা </th>
-                                </tr>
-                            </thead>
-                            <tbody>
-                                <tr>
-                                <td> ১৮.৫</td>
-                                <td>২৪.৯৯</td>
-                                <td>স্বাভাবিক </td>
-                                </tr>
-                            </tbody>
-                        </table>
-                        </TabPanel>
-                        <TabPanel value="2">
-                            <p classNameName='tab-header-sub-pera'>বিএমআই   0   হতে   ১৮.৯৯   এর   মাঝে   হলে   অপুষ্টি </p>
-                        <table classNameName="table table-bordered table-responsive">
-                            <thead>
-                                <tr>
-                                <th scope="col">বিএমআই শুরু </th>
-                                <th scope="col">বিএমআই শেষ </th>
-                                <th scope="col">অবস্থা </th>
-                                </tr>
-                            </thead>
-                            <tbody>
-                                <tr>
-                                <td> ০ </td>
-                                <td>১৮.৯৯</td>
-                                <td>অপুষ্টি  </td>
-                                </tr>
-                            </tbody>
-                        </table>
-                        </TabPanel>
-                        <TabPanel value="3">
-                            <p className='tab-header-sub-pera'>বিএমআই   ২৫   হতে  ২৯.৯৯   এর   মাঝে   হলে   অতিপুষ্টি </p>
-                        <table className="table table-bordered table-responsive">
-                            <thead>
-                                <tr>
-                                <th scope="col">বিএমআই শুরু </th>
-                                <th scope="col">বিএমআই শেষ </th>
-                                <th scope="col">অবস্থা </th>
-                                </tr>
-                            </thead>
-                            <tbody>
-                                <tr>
-                                <td>২৫ </td>
-                                <td>২৯.৯</td>
-                                <td>অতিপুষ্টি </td>
-                                </tr>
-                            </tbody>
-                        </table>
-                        </TabPanel>
-                    </TabContext> */}
+        
 
         <ul
           className="nav nav-pills mb-3 d-flex justify-content-around"
@@ -146,11 +89,13 @@ const TabsOfNutration = () => {
             role="tabpanel"
             aria-labelledby="pills-home-tab"
           >
-            <p className="tab-header-sub-pera">
+            <p className="tab-header-sub-pera mt-4 pt-5 pb-4">
               বিএমআই ১৮.৫ হতে ২৩.৯ এর মাঝে হলে স্বাভাবিক{" "}
             </p>
+
             <table className="table table-bordered table-responsive">
               <thead>
+              
                 <tr>
                   <th scope="col">বিএমআই শুরু </th>
                   <th scope="col">বিএমআই শেষ </th>
@@ -165,8 +110,6 @@ const TabsOfNutration = () => {
                 </tr>
               </tbody>
             </table>
-
-            <CureAndPrevention />
           </div>
           <div
             className="tab-pane fade"
@@ -175,27 +118,49 @@ const TabsOfNutration = () => {
             aria-labelledby="pills-profile-tab"
           >
             {" "}
-            <p className="tab-header-sub-pera">
-              বিএমআই ২৫ হতে ২৯.৯৯ এর মাঝে হলে অতিপুষ্টি{" "}
+            <p className="tab-header-sub-pera mt-4 pt-5 pb-4">
+            বিএমআই  ২৫.০  বা  তার  বেশি  হলে  অতিপুষ্টি  বা  অজনাধিক্য  বা  স্থূলতা।  অতিপুষ্টি  বা  স্থূলতার  স্তর  ৪টি:  {" "}
             </p>
+
+            <div className="row mt-2">
+              <div className="col-sm-12 col-md-6 col-lg-4 col-xl-3 col-xxl-3">
+                <p className="otipusti-tabel-head-point">১.স্বাভাবিকের থেকে বেশি </p>
+              </div>
+              <div className="col-sm-12 col-md-6 col-lg-4 col-xl-3 col-xxl-3">
+              <p className="otipusti-tabel-head-point">২.স্থূলতা গ্রেড-১ (স্বল্প স্থূলতা) </p>
+              </div>
+              <div className="col-sm-12 col-md-6 col-lg-4 col-xl-3 col-xxl-3">
+              <p className="otipusti-tabel-head-point">৩.স্থূলতা গ্রেড-২ (মাঝারী স্থূলতা)</p>
+              </div>
+              <div className="col-sm-12 col-md-6 col-lg-4 col-xl-3 col-xxl-3">
+              <p className="otipusti-tabel-head-point">৪.স্থূলতা গ্রেড-৩ (মারাত্মক স্থূলতা)</p>
+              </div>
+            </div>
+
+
+
             <table className="table table-bordered table-responsive">
               <thead>
                 <tr>
                   <th scope="col">বিএমআই শুরু </th>
                   <th scope="col">বিএমআই শেষ </th>
-                  <th scope="col">অবস্থা </th>
+                  <th scope="">অবস্থা </th>
                 </tr>
               </thead>
               <tbody>
-                <tr>
-                  <td>২৫ </td>
-                  <td>২৯.৯</td>
-                  <td>অতিপুষ্টি </td>
-                </tr>
+                {
+                   tabelData.map((item, i)=> (
+                    <tr key={i}>
+                      <td>{item.startBMI}</td>
+                      <td>{item.endBMI}</td>
+                      <td>{item.status}</td>
+                    </tr>
+                   )) 
+                }
               </tbody>
             </table>
 
-            <CureAndPrevention />
+            <CurePreventionOtipusti/>
           </div>
           <div
             className="tab-pane fade"
@@ -203,10 +168,15 @@ const TabsOfNutration = () => {
             role="tabpanel"
             aria-labelledby="pills-contact-tab"
           >
-            <p className="tab-header-sub-pera">
-              বিএমআই 0 হতে ১৮.৯৯ এর মাঝে হলে অপুষ্টি{" "}</p>
+            <p className="tab-header-sub-pera mt-4 pt-5 pb-4">
+            বিএমআই  ১৮.৫  এর  কম  হলে  অপুষ্টি।   অপুষ্টির  স্তর  ৩টি:  {" "}</p>
             <table className="table table-bordered table-responsive">
               <thead>
+              <tr className="border-0 tr-details">
+                  <th scope="col" className="border-0 bg-transparent">১. স্বল্প মাত্রার অপুষ্টি  ১</th>
+                  <th scope="col" className="border-0 bg-transparent">২. মাঝারি মাত্রার অপুষ্টি  ২</th>
+                  <th scope="col" className="border-0 bg-transparent">৩. মারাত্মক মাত্রার অপুষ্টি  ৩</th>
+                </tr>
                 <tr>
                   <th scope="col">বিএমআই শুরু </th>
                   <th scope="col">বিএমআই শেষ </th>

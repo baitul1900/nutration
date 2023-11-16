@@ -269,5 +269,37 @@ body {
 .nutration-container {
   border-radius: 16px;
   background: #9dc84f1a;
-  padding-block: 56px ;
+  padding-block: 56px;
+}
+
+.tr-details th {
+  color: #00526e !important;
+  font-size: var(--twentyFour);
+  font-weight: 600;
+  /* padding-top: 24px; */
+}
+
+.otipusti-tabel-head-point {
+  color: #00526e;
+  font-size: 20px;
+  font-weight: 600;
+}
+
+
+
+/* Adjust spacing between images */
+.team-member {
+  position: relative;
+  text-align: center;
+}
+
+.overlay {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%; /* Ensure the overlay covers the entire image */
+  background-color: rgba(0, 0, 0, 0.5); /* Adjust the overlay background */
+  color: white; /* Adjust the text color */
+  padding: 10px; /* Add padding as needed */
+  box-sizing: border-box; /* Include padding in width/height */
 }

@@ -1,50 +1,52 @@
-/* eslint-disable no-undef */
 import axios from 'axios';
-// eslint-disable-next-line no-unused-vars
 import React, { useEffect, useState } from 'react';
 
-const CureAndPrevention = () => {
-    const [issues, setIssues] = useState([]);
+const CurePreventionOtipusti = () => {
 
-    const [resolve, setResolve] = useState([])
+    const [issue , setIssues] = useState([]);
 
-    
-  useEffect(() => {
-    // Fetch data using Axios
-    axios.get('/public/data.json')
-      .then(response => {
-        setIssues(response.data.issues);
-      })
-      .catch(error => {
-        console.error('Error fetching data:', error);
-      });
-  }, []);
+    const [resolve, setResolve] = useState([]);
 
 
-  useEffect(() => {
-      axios.get('/public/data.json')
-        .then(reposne => {
-            setResolve(reposne.data.resolve)
+    useEffect(()=> {
+
+        // Fetch data using Axios
+        axios.get('/public/data.json')
+        .then(response => {
+            setIssues(response.data.issueOtiPusti);
         })
         .catch(error => {
-            console.error('Error fetching data:', error)
+            console.error('Error fetching data:', error);
+        });
+    }, [])
+
+    useEffect(()=> {
+
+        // Fetch data using Axios
+        axios.get('/public/data.json')
+        .then(response => {
+            setResolve(response.data.resolveOtipusti);
         })
-  }, [])
+        .catch(error => {
+            console.error('Error fetching data:', error);
+        });
+    }, [])
+
 
 
     return (
         <section className='abt-sec  about-container pt-5'>
-            <h3 className='text-center'> <span><img src="/src/assets/img/lineicon-left.svg" alt="" /></span>  অপুষ্টির কারণে সমস্যা ও করণীয় সমূহ   <span><img src="/src/assets/img/line-icon.svg" alt="" /></span></h3>
+            <h3 className='text-center'> <span><img src="/src/assets/img/lineicon-left.svg" alt="" /></span> অতিপুষ্টির কারণে সমস্যা ও করণীয় সমূহ  <span><img src="/src/assets/img/line-icon.svg" alt="" /></span></h3>
       
                 <div className="container nutration-container">
-                    <div className="row justify-content-center align-items-start">
+                    <div className="row justify-content-center align-items-center">
 
                         <div className="col-sm-12 col-md-12 col-lg-4 col-xl-4">
                             <h5 className='text-end problems'> সমস্যাসমূহ : </h5>
                             <ul className='list-group text-end'>
-                                {issues.map(issue => (
-                                    <ul className="list-group list-group-horizontal justify-content-end" key={issue.id}>
-                                        <li className="list-group-item " >{issue.description}</li>
+                                {issue.map((issues,i) => (
+                                    <ul className="list-group list-group-horizontal justify-content-end" key={i}>
+                                        <li className="list-group-item " >{issues.content}</li>
                                         <li className="list-group-item"><img src="/src/assets/img/thik-mark.svg" className='img-fluid svg-thik' alt="" /></li>
                                     </ul>
                                 ))}
@@ -52,7 +54,7 @@ const CureAndPrevention = () => {
                         </div>
 
                         <div className="col-sm-12 col-md-12 col-lg-4 col-xl-4">
-                            <img src="/src/assets/img/opusty.png" className='img-fluid' alt="image" />
+                            <img src="/src/assets/img/otipusty.png" className='img-fluid' alt="image" />
                         </div>
 
 
@@ -60,8 +62,8 @@ const CureAndPrevention = () => {
                         <div className="col-sm-12 col-md-12 col-lg-4 col-xl-4">
                             <h5 className='text-start problems'>পুষ্টিতে ফিরতে করণীয় : </h5>
                             <ul className='list-group text-start'>
-                                {resolve.map(issue => (
-                                    <ul className="list-group list-group-horizontal justify-content-start" key={issue.id}>
+                                {resolve.map((issue, i) => (
+                                    <ul className="list-group list-group-horizontal justify-content-start" key={i}>
                                         <li className="list-group-item image-list"><img src="/src/assets/img/thik-mark.svg" className='img-fluid svg-thik' alt="" /></li>
                                         <li className="list-group-item " >{issue.content}</li>
                                     </ul>
@@ -73,8 +75,8 @@ const CureAndPrevention = () => {
                     </div>
                     
                 </div>
-        </section>     
+        </section>   
     );
 };
 
-export default CureAndPrevention;
+export default CurePreventionOtipusti;

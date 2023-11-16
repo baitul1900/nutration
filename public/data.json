@@ -1,99 +1,161 @@
 {
-    "issues": [
-      {
-        "id": 1,
-        "title": "শারীরিক বৃষ্টি",
-        "description": "শারীরিক বৃষ্টি ও মানসিক বিকাশ ব্যথা হয়।",
-        "icon": ""
-      },
-      {
-        "id": 2,
-        "title": "শিখন ক্ষমতা ব্যথা",
-        "description": "শিখন ক্ষমতা ব্যথা হওয়ায় পড়াশোনা কাঙ্খিত ফলাফল অর্জিত হয় না।",
-        "icon": "mdi-book-open-variant"
-      },
-      {
-        "id": 3,
-        "title": "কর্ম ক্ষমতা কমে",
-        "description": "কর্ম ক্ষমতা কমে যায়।",
-        "icon": ""
-      },
-      {
-        "id": 4,
-        "title": "রোগ প্রতিরোধ ক্ষমতা কমে",
-        "description": "রোগ প্রতিরোধ ক্ষমতা কমে যায়, ঘন ঘন রোগ হয় ও রোগ দীর্ঘস্থায়ী হয়।",
-        "icon": ""
-      },
-      {
-        "id": 5,
-        "title": "দেশ ও জাতি মেধা শুন্য",
-        "description": "দেশ ও জাতি মেধা শুন্য হয়ে পড়ে।",
-        "icon": ""
-      },
-      {
-        "id": 6,
-        "title": "উৎপাদন ও উন্নয়নে প্রতিবন্ধকতা সৃষ্টি",
-        "description": "দেশের উৎপাদন ও উন্নয়নে প্রতিবন্ধকতা সৃষ্টি করে।",
-        "icon": ""
-      }
-    ],
-
-    "resolve": [
-        {
-          "content": "পুষ্টিকর সুষম ও পরিমিত খাদ্য গ্রহণের মাধ্যমে।",
-          "description": "Obtaining nutritious and balanced food intake.",
-          "icon": "icon-link-to-your-image",
-          "category": "Nutritious Food"
-        },
-        {
-          "content": "নিরাপদ খাবার ও নিরাপদ পানি পান করে।",
-          "description": "Consuming safe food and water.",
-          "icon": "icon-link-to-your-image",
-          "category": "Safe Food & Water"
-        },
-        {
-          "content": "রোগ প্রতিরোধ টিকা নেয়া, ৪ মাস পরপর কৃমিনাশক বড়ি সেবন।",
-          "description": "Receiving vaccination for disease prevention, taking deworming tablets for four consecutive months, consuming iron-rich and vitamin-enriched food according to need.",
-          "icon": "icon-link-to-your-image",
-          "category": "Disease Prevention"
-        },
-        {
-            "content": "ও চাহিদা অনুযায়ী লৌহ সমৃদ্ধ ও ভিটামিন-এ সমৃদ্ধ খাবার এবং আয়রন বড়ি সেবন।।",
-            "description": "Receiving vaccination for disease prevention, taking deworming tablets for four consecutive months, consuming iron-rich and vitamin-enriched food according to need.",
-            "icon": "icon-link-to-your-image",
-            "category": "Disease Prevention"
-          },
-        {
-          "content": "রোগ প্রতিরোধ ক্ষমতা কমে যায়, ঘন ঘন রোগ হয় ও রোগ দীর্ঘস্থায়ী হয়।",
-          "description": "Immunity decreases, frequent illness occurs, and diseases become prolonged.",
-          "icon": "icon-link-to-your-image",
-          "category": "Reduced Immunity"
-        },
-        {
-          "content": "কিশোর-কিশোরীদের পুষ্টি শিক্ষা ।",
-          "description": "Providing nutrition education and training to adolescents for personal hygiene and reproductive health.",
-          "icon": "icon-link-to-your-image",
-          "category": "Adolescent Nutrition"
-        },
-        {
-            "content": "পুষ্টি প্রশিক্ষণ প্রদানের মাধ্যমে ব্যক্তিগত পরিষ্কার-পরিচ্ছন্নতা",
-            "description": "Receiving vaccination for disease prevention, taking deworming tablets for four consecutive months, consuming iron-rich and vitamin-enriched food according to need.",
-            "icon": "icon-link-to-your-image",
-            "category": "Disease Prevention"
-          },
-        {
-          "content": "খাদ্য গ্রহণের কুসংস্কার প্রতিরোধ করা।",
-          "description": "Preventing food contamination during intake.",
-          "icon": "icon-link-to-your-image",
-          "category": "Food Contamination Prevention"
-        },
-        {
-          "content": "৩ মাস পর পর বিএমআই বের করে পুষ্টি অবস্থা নিরূপণ করা।",
-          "description": "Determining nutritional status by measuring BMI every three months.",
-          "icon": "icon-link-to-your-image",
-          "category": "Nutritional Status Assessment"
-        }
-      ]
-      
-  }
-  
+  "issues": [
+    {
+      "id": 1,
+      "title": "শারীরিক বৃষ্টি",
+      "description": "শারীরিক বৃষ্টি ও মানসিক বিকাশ ব্যথা হয়।",
+      "icon": ""
+    },
+    {
+      "id": 2,
+      "title": "শিখন ক্ষমতা ব্যথা",
+      "description": "শিখন ক্ষমতা ব্যথা হওয়ায় পড়াশোনা কাঙ্খিত ফলাফল অর্জিত হয় না।",
+      "icon": "mdi-book-open-variant"
+    },
+    {
+      "id": 3,
+      "title": "কর্ম ক্ষমতা কমে",
+      "description": "কর্ম ক্ষমতা কমে যায়।",
+      "icon": ""
+    },
+    {
+      "id": 4,
+      "title": "রোগ প্রতিরোধ ক্ষমতা কমে",
+      "description": "রোগ প্রতিরোধ ক্ষমতা কমে যায়, ঘন ঘন রোগ হয় ও রোগ দীর্ঘস্থায়ী হয়।",
+      "icon": ""
+    },
+    {
+      "id": 5,
+      "title": "দেশ ও জাতি মেধা শুন্য",
+      "description": "দেশ ও জাতি মেধা শুন্য হয়ে পড়ে।",
+      "icon": ""
+    },
+    {
+      "id": 6,
+      "title": "উৎপাদন ও উন্নয়নে প্রতিবন্ধকতা সৃষ্টি",
+      "description": "দেশের উৎপাদন ও উন্নয়নে প্রতিবন্ধকতা সৃষ্টি করে।",
+      "icon": ""
+    }
+  ],
+  "resolve": [
+    {
+      "content": "পুষ্টিকর সুষম ও পরিমিত খাদ্য গ্রহণের মাধ্যমে।",
+      "description": "Obtaining nutritious and balanced food intake.",
+      "icon": "icon-link-to-your-image",
+      "category": "Nutritious Food"
+    },
+    {
+      "content": "নিরাপদ খাবার ও নিরাপদ পানি পান করে।",
+      "description": "Consuming safe food and water.",
+      "icon": "icon-link-to-your-image",
+      "category": "Safe Food & Water"
+    },
+    {
+      "content": "রোগ প্রতিরোধ টিকা নেয়া, ৪ মাস পরপর কৃমিনাশক বড়ি সেবন।",
+      "description": "Receiving vaccination for disease prevention, taking deworming tablets for four consecutive months, consuming iron-rich and vitamin-enriched food according to need.",
+      "icon": "icon-link-to-your-image",
+      "category": "Disease Prevention"
+    },
+    {
+      "content": "ও চাহিদা অনুযায়ী লৌহ সমৃদ্ধ ও ভিটামিন-এ সমৃদ্ধ খাবার এবং আয়রন বড়ি সেবন।।",
+      "description": "Receiving vaccination for disease prevention, taking deworming tablets for four consecutive months, consuming iron-rich and vitamin-enriched food according to need.",
+      "icon": "icon-link-to-your-image",
+      "category": "Disease Prevention"
+    },
+    {
+      "content": "রোগ প্রতিরোধ ক্ষমতা কমে যায়, ঘন ঘন রোগ হয় ও রোগ দীর্ঘস্থায়ী হয়।",
+      "description": "Immunity decreases, frequent illness occurs, and diseases become prolonged.",
+      "icon": "icon-link-to-your-image",
+      "category": "Reduced Immunity"
+    },
+    {
+      "content": "কিশোর-কিশোরীদের পুষ্টি শিক্ষা ।",
+      "description": "Providing nutrition education and training to adolescents for personal hygiene and reproductive health.",
+      "icon": "icon-link-to-your-image",
+      "category": "Adolescent Nutrition"
+    },
+    {
+      "content": "পুষ্টি প্রশিক্ষণ প্রদানের মাধ্যমে ব্যক্তিগত পরিষ্কার-পরিচ্ছন্নতা",
+      "description": "Receiving vaccination for disease prevention, taking deworming tablets for four consecutive months, consuming iron-rich and vitamin-enriched food according to need.",
+      "icon": "icon-link-to-your-image",
+      "category": "Disease Prevention"
+    },
+    {
+      "content": "খাদ্য গ্রহণের কুসংস্কার প্রতিরোধ করা।",
+      "description": "Preventing food contamination during intake.",
+      "icon": "icon-link-to-your-image",
+      "category": "Food Contamination Prevention"
+    },
+    {
+      "content": "৩ মাস পর পর বিএমআই বের করে পুষ্টি অবস্থা নিরূপণ করা।",
+      "description": "Determining nutritional status by measuring BMI every three months.",
+      "icon": "icon-link-to-your-image",
+      "category": "Nutritional Status Assessment"
+    }
+  ],
+  "tableDataOtipusti": [
+    {
+      "startBMI": "২৫.০০",
+      "endBMI": "২৯.৯৯",
+      "status": "স্বাভাবিকের থেকে বেশি (ঝুঁকিপূর্ণ)"
+    },
+    {
+      "startBMI": "৩০.০০",
+      "endBMI": "৩৪.৯৯",
+      "status": "স্বাভাবিকের থেকে বেশি (অতি ঝুঁকিপূর্ণ)"
+    },
+    {
+      "startBMI": "৩৫.০০",
+      "endBMI": "৩৯.৯৯",
+      "status": "স্বাভাবিকের থেকে বেশি (বেশি ঝুঁকিপূর্ণ)"
+    },
+    {
+      "startBMI": "৪০.০০",
+      "endBMI": "৪০.০০ থেকে বেশি ",
+      "status": "স্থূলতা গ্রেড-৩ (মারাত্মক স্থূলতা)"
+    }
+  ],
+  "issueOtiPusti": [
+    {
+      "content": "বয়সের তুলনায় ওজন ও উচ্চতা বৃদ্ধির অসামজস্য ও মানসিক বিকাশ ব্যহত হয়।"
+    },
+    {
+      "content": "কর্মদক্ষতা কমে যায়।"
+    },
+    {
+      "content": "নিজেকে পারিপার্শ্বিকতার সাথে খাপ খাওয়াতে পারে না।"
+    },
+    {
+      "content": "সমাজের কাছে নিজেকে হেয় প্রতিপন্ন মনে করে, নিজেকে সব কিছু থেকে গুটিয়ে রাখে।"
+    },
+    {
+      "content": "রোগ প্রতিরোধ ক্ষমতা কমে যায়, ঘন ঘন রোগ হয় ও রোগ দীর্ঘস্থানী হয়।"
+    },
+    {
+      "content": "দেশের উৎপাদন ও উন্নয়নে প্রতিবন্ধকতা সৃষ্টি করে।"
+    }
+  ],
+  "resolveOtipusti": [
+    {
+      "content": "চাহিদা মোতাবেক পরিমিত খাদ্য গ্রহণের মাধ্যমে।"
+    },
+    {
+      "content": "শর্করা ও প্রানীজ, আমিষ জাতীয় খাবার কম গ্রহণ করা। (ভাত, মাছ, মাংস, ডিম)"
+    },
+    {
+      "content": "নিয়মিত খেলাধুলা ও ব্যায়াম করা।"
+    },
+    {
+      "content": "কায়িক পরিশ্রম করা।"
+    },
+    {
+      "content": "ফাস্ট ফুড, জ্যাং ফুড ও কোমল পানীয় পরিহার করা।"
+    },
+    {
+      "content": "দাওয়াত-নিমন্ত্রন ও আনুষ্ঠানিক খাবার পরিহার করা।"
+    },
+    {
+      "content": "৩ মাস পর পর বিএমআই বের করে পুষ্টি অবস্থা নিরুপন করা।"
+    }
+  ]
+}
