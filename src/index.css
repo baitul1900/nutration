@@ -1,10 +1,9 @@
-@import url("https://fonts.googleapis.com/css2?family=Hind+Siliguri:wght@300;400;500;600;700&display=swap");
-
+@import url("https://fonts.googleapis.com/css2?family=Baloo+Da+2:wght@400;500;600;700;800&display=swap");
 body {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  font-family: "Hind Siliguri", sans-serif;
+  font-family: "Baloo Da 2", sans-serif;
   background-color: var(--bodyColor);
 }
 
@@ -32,8 +31,8 @@ body {
 }
 
 .navbar-nav .nav-item a {
-  color: var(--fontColorSub) !important;
-  font-size: var(--tweenty) !important;
+  font-size: var(--tweenty);
+  text-decoration: none;
 }
 
 .hero-container {
@@ -305,6 +304,7 @@ body {
 footer {
   background: var(--primaryBodyColor);
   padding: 60px 0px 80px 0px;
+  margin-top: 60px;
 }
 
 .subscribe-btn {
@@ -319,11 +319,76 @@ footer {
   color: #fff;
 }
 
-
 .active-item {
-  color: #000 !important;
+  border-bottom: 2px solid var(--buttonColor);
+  color: var(--bodyColor);
+  padding: 0.3rem 1rem;
+  text-decoration: none;
 }
 
-.pending-item {
+.inactive {
+  /* background-color: #f8f9fa; */
+  color: var(--fontColorSub);
+  padding: 0.3rem 1rem;
+  border-radius: 0.25rem;
+  text-decoration: none;
+}
+
+.blog-c-pra {
+  border-radius: 8px;
+  background: #9dc84f;
   color: #fff;
+  font-weight: 600;
+}
+
+.for-blog {
+  position: relative;
+}
+
+.blog-cate {
+  position: absolute;
+  top: 7%;
+  left: 2%;
+}
+
+.text-blog {
+  color: #262121;
+  font-family: Poppins;
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal;
+}
+
+.blog-date {
+  color: #332a2a;
+  font-size: 16px;
+  font-weight: 400;
+}
+/* responsive style breakpoint */
+@media only screen and (max-width: 770px) {
+  .our-activity-container h3 {
+    font-size: 22px;
+    font-weight: 600;
+  }
+  .about-container h3 {
+    font-size: 22px;
+    font-weight: 600;
+  }
+  .activity-card p {
+    font-size: 16px;
+  }
+
+  .pos-two {
+    position: static;
+    top: 0;
+    left: 0;
+    transform: none;
+  }
+
+  .pos-one {
+    position: static;
+    margin: auto 50px;
+    padding-bottom: 20px;
+  }
 }

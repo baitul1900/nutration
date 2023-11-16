@@ -41,11 +41,12 @@ const CureAndPrevention = () => {
 
                         <div className="col-sm-12 col-md-12 col-lg-4 col-xl-4">
                             <h5 className='text-end problems'> সমস্যাসমূহ : </h5>
-                            <ul className='list-group text-end'>
+                            <ul className='list-group text-end '>
                                 {issues.map(issue => (
-                                    <ul className="list-group list-group-horizontal justify-content-end" key={issue.id}>
+                                    <ul className="list-group list-group-horizontal justify-content-sm-start justify-content-md-start justify-content-end" key={issue.id}>
+                                        <li className="list-group-item image-list d-none d-md-block d-sm-block"><img src="/src/assets/img/thik-mark.svg" className='img-fluid svg-thik' alt="" /></li>
                                         <li className="list-group-item " >{issue.description}</li>
-                                        <li className="list-group-item"><img src="/src/assets/img/thik-mark.svg" className='img-fluid svg-thik' alt="" /></li>
+                                        <li className="list-group-item d-block d-md-none d-sm-none"><img src="/src/assets/img/thik-mark.svg" className='img-fluid svg-thik' alt="" /></li>
                                     </ul>
                                 ))}
                             </ul>

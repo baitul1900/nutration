@@ -39,11 +39,11 @@ const OurPartner = () => {
 
 
 
-      <div className="row">
+      <div className="row g-3 ">
 
         {
           OurPartner.map((item, i) => (
-              <div key={i} className="col-sm-12 col-md-4 col-lg-2 col-xl-2 col-xxl-2">
+              <div key={i} className="col-sm-12 col-md-4 col-lg-4 col-xl-2 col-xxl-2 d-flex justify-content-center">
                 <img src={item.imgSrc} alt="" />
               </div>
           ))

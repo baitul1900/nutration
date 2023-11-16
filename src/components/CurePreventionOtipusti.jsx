@@ -45,9 +45,10 @@ const CurePreventionOtipusti = () => {
                             <h5 className='text-end problems'> সমস্যাসমূহ : </h5>
                             <ul className='list-group text-end'>
                                 {issue.map((issues,i) => (
-                                    <ul className="list-group list-group-horizontal justify-content-end" key={i}>
+                                    <ul className="list-group list-group-horizontal justify-content-sm-start justify-content-md-start justify-content-end" key={i}>
+                                        <li className="list-group-item d-none d-md-block d-sm-block"><img src="/src/assets/img/thik-mark.svg" className='img-fluid svg-thik' alt="" /></li>
                                         <li className="list-group-item " >{issues.content}</li>
-                                        <li className="list-group-item"><img src="/src/assets/img/thik-mark.svg" className='img-fluid svg-thik' alt="" /></li>
+                                        <li className="list-group-item d-block d-sm-none d-md-none"><img src="/src/assets/img/thik-mark.svg" className='img-fluid svg-thik' alt="" /></li>
                                     </ul>
                                 ))}
                             </ul>

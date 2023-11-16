@@ -2,7 +2,7 @@ import { NavLink } from "react-router-dom";
 
 const Navbar = () => {
   return (
-    <nav className="navbar navbar-expand-lg">
+    <nav className="navbar navbar-expand-lg fixed-top">
       <div className="container">
         <a className="navbar-brand" href="#">
           Logo
@@ -22,16 +22,16 @@ const Navbar = () => {
           <div className="container">
             <ul className="navbar-nav d-lfex justify-content-end">
               <li className="nav-item nav-link">
-                  <NavLink to={'/'} className={({isActive})=> isActive ? "active-item" : "pending-item"}>Home</NavLink>
+              <NavLink to={'/'} className={({isActive})=>isActive ? 'active-item' : 'inactive'}>Home</NavLink>
               </li>
               <li className="nav-item nav-link">
-                  <NavLink to={'/ourDeatils'} className=''>About Us</NavLink>
+                  <NavLink to={'/ourDeatils'} className={({isActive})=>isActive ? 'active-item' : 'inactive'}>About Us</NavLink>
               </li>
               <li className="nav-item nav-link">
-                  <NavLink to={'/blog'} className=''>Blog</NavLink>
+                  <NavLink to={'/blog'} className={({isActive})=>isActive ? 'active-item' : 'inactive'}>Blog</NavLink>
               </li>
               <li className="nav-item nav-link">
-                  <NavLink to={'/activity'} className=''>Activities</NavLink>
+                  <NavLink to={'/activity'} className={({isActive})=>isActive ? 'active-item' : 'inactive'}>Activities</NavLink>
               </li>
             </ul>
           </div>
