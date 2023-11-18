@@ -17,11 +17,10 @@ const BBmiCalculator = () => {
     }));
   };
 
-
-
   const bmiCalculation = () => {
     const { heightFeet, heightInch, weight } = form;
-    const totalHeightInInches = parseInt(heightFeet) * 12 + parseInt(heightInch);
+    const totalHeightInInches =
+      parseInt(heightFeet) * 12 + parseInt(heightInch);
     const heightInMeters = totalHeightInInches * 0.0254;
     const bmi = (weight / (heightInMeters * heightInMeters)).toFixed(2);
     setForm((prevObj) => ({
@@ -58,11 +57,11 @@ const BBmiCalculator = () => {
 
   const handleReset = () => {
     setForm({
-      height: "",
+      heightFeet: "",
       weight: "",
-      age: "",
+      heightInch: "",
       bmi: "0",
-      stage: "",
+      stage: "বিএমআই স্ট্যাটাস",
     });
   };
 
@@ -70,39 +69,46 @@ const BBmiCalculator = () => {
     <div className="card bmi-form ">
       <div className="card-body">
         <div className="card-title bmi-title">বিএমআই ক্যালকুলেটর </div>
-        <hr style={{color : 'white'}} />
-
+        <hr style={{ color: "white" }} />
 
         <div className="row mb-2">
-            <div className="col-4 align-self-center text-center">
-              <label htmlFor="weight" className="">ওজন</label>
-            </div>
-            <div className="col-4 text-center">
-              <TextField
-                value={form.weight}
-                onChange={(e) => inputOnChange("weight", e.target.value)}
-                type="text"
-                variant="outlined"
-                size="small"
-                InputProps={{
-                  endAdornment: (
-                    <InputAdornment position="end"><span style={{ color: '#FFFFFF', fontSize : "14px"}}>কেজি</span></InputAdornment>
-                  ),
-                  
-                  
-                }}
-                sx={{
-                    '& input': { color: 'white' },
-                    '& .MuiOutlinedInput-root.Mui-focused .MuiOutlinedInput-notchedOutline': { borderColor: 'white' }, // Change border color on focus
-                    '& .MuiOutlinedInput-notchedOutline': { borderColor: 'white' }, // Change border color
-                    '&:hover .MuiOutlinedInput-root .MuiOutlinedInput-notchedOutline': { borderColor: 'white' }, // Change border color on hover
-                }}
-              />
-            </div>
+          <div className="col-4 align-self-center text-center">
+            <label htmlFor="weight" className="">
+              ওজন
+            </label>
           </div>
+          <div className="col-4 text-center">
+            <TextField
+              value={form.weight}
+              onChange={(e) => inputOnChange("weight", e.target.value)}
+              type="text"
+              variant="outlined"
+              size="small"
+              InputProps={{
+                endAdornment: (
+                  <InputAdornment position="end">
+                    <span style={{ color: "#FFFFFF", fontSize: "14px" }}>
+                      কেজি
+                    </span>
+                  </InputAdornment>
+                ),
+              }}
+              sx={{
+                "& input": { color: "white" },
+                "& .MuiOutlinedInput-root.Mui-focused .MuiOutlinedInput-notchedOutline":
+                  { borderColor: "white" }, // Change border color on focus
+                "& .MuiOutlinedInput-notchedOutline": { borderColor: "white" }, // Change border color
+                "&:hover .MuiOutlinedInput-root .MuiOutlinedInput-notchedOutline":
+                  { borderColor: "white" }, // Change border color on hover
+              }}
+            />
+          </div>
+        </div>
         <div className="row justify-content-center mb-2 g-3">
           <div className="col-4 align-self-center text-center">
-            <label htmlFor="Height" className="">উচ্চতা</label>
+            <label htmlFor="Height" className="">
+              উচ্চতা
+            </label>
           </div>
           <div className="col-4">
             <TextField
@@ -113,15 +119,21 @@ const BBmiCalculator = () => {
               size="small"
               InputProps={{
                 endAdornment: (
-                  <InputAdornment position="end"><span style={{ color: '#FFFFFF', fontSize: '14px'}}>ফুট</span></InputAdornment>
+                  <InputAdornment position="end">
+                    <span style={{ color: "#FFFFFF", fontSize: "14px" }}>
+                      ফুট
+                    </span>
+                  </InputAdornment>
                 ),
               }}
               sx={{
-                '& input': { color: 'white' },
-                '& .MuiOutlinedInput-root.Mui-focused .MuiOutlinedInput-notchedOutline': { borderColor: 'white' }, // Change border color on focus
-                '& .MuiOutlinedInput-notchedOutline': { borderColor: 'white' }, // Change border color
-                '&:hover .MuiOutlinedInput-root .MuiOutlinedInput-notchedOutline': { borderColor: 'white' }, // Change border color on hover
-            }}
+                "& input": { color: "white" },
+                "& .MuiOutlinedInput-root.Mui-focused .MuiOutlinedInput-notchedOutline":
+                  { borderColor: "white" }, // Change border color on focus
+                "& .MuiOutlinedInput-notchedOutline": { borderColor: "white" }, // Change border color
+                "&:hover .MuiOutlinedInput-root .MuiOutlinedInput-notchedOutline":
+                  { borderColor: "white" }, // Change border color on hover
+              }}
             />
           </div>
           <div className="col-4">
@@ -133,46 +145,57 @@ const BBmiCalculator = () => {
               size="small"
               InputProps={{
                 endAdornment: (
-                  <InputAdornment position="end"><span style={{ color: '#FFFFFF', fontSize: '14px'}}>ইঞ্চি</span></InputAdornment>
+                  <InputAdornment position="end">
+                    <span style={{ color: "#FFFFFF", fontSize: "14px" }}>
+                      ইঞ্চি
+                    </span>
+                  </InputAdornment>
                 ),
               }}
               sx={{
-                '& input': { color: 'white' },
-                '& .MuiOutlinedInput-root.Mui-focused .MuiOutlinedInput-notchedOutline': { borderColor: 'white' }, // Change border color on focus
-                '& .MuiOutlinedInput-notchedOutline': { borderColor: 'white' }, // Change border color
-                '&:hover .MuiOutlinedInput-root .MuiOutlinedInput-notchedOutline': { borderColor: 'white' }, // Change border color on hover
-            }}
+                "& input": { color: "white" },
+                "& .MuiOutlinedInput-root.Mui-focused .MuiOutlinedInput-notchedOutline":
+                  { borderColor: "white" }, // Change border color on focus
+                "& .MuiOutlinedInput-notchedOutline": { borderColor: "white" }, // Change border color
+                "&:hover .MuiOutlinedInput-root .MuiOutlinedInput-notchedOutline":
+                  { borderColor: "white" }, // Change border color on hover
+              }}
             />
           </div>
-          </div>
-          
-          
+        </div>
 
-          <div className="row text-center mt-4 ">
-            <div className="col-4 text-center">
-                <Button variant="" className="calcu-bmi-btn" onClick={() => console.log(bmiCalculation())}>
-                  ক্যালকুলেটর
-                </Button>
-            </div>
-            <div className="col-4 pt-1 align-self-center">
+        <div className="row text-center mt-4 ">
+          <div className="col-sm-12 col-md-4 col-lg-4 text-center">
+            <Button
+              variant=""
+              className="calcu-bmi-btn"
+              onClick={() => console.log(bmiCalculation())}
+            >
+              ক্যালকুলেটর
+            </Button>
+          </div>
+          <div className="col-sm-12 col-md-4 col-lg-4 pt-1 align-self-center">
             <p className="bmi-rate pt-2 pb-2">{form.bmi}</p>
-            </div>
-            <div className="col-4 pt-1 text-center">
-                <Button variant="" className="calcu-bmi-btn" onClick={() => console.log(handleReset())}>
-                  রিসেট
-                </Button>
-            </div>
           </div>
+          <div className="col-sm-12 col-md-4 col-lg-4 pt-1 text-center">
+            <Button
+              variant=""
+              className="calcu-bmi-btn"
+              onClick={() => console.log(handleReset())}
+            >
+              রিসেট
+            </Button>
+          </div>
+        </div>
 
-          <div className="row justify-content-center mt-4 ">
-            <div className="col-3 text-center align-self-center">
-                <p className="bmi-is-eq">বিএমআই হলো : </p>
-            </div>
-            <div className="col-2 text-center align-self-center">
-                <p className="bmi-stage">({form.stage})</p>
-            </div>
+        <div className="row justify-content-center mt-4">
+          <div className="col-sm-12 col-md-3 col-lg-3 text-center align-self-center">
+            <p className="bmi-is-eq">বিএমআই হলো : </p>
           </div>
-        
+          <div className="col-sm-12 col-md-3 col-lg-3 text-center align-self-center">
+            <p className="bmi-stage">({form.stage})</p>
+          </div>
+        </div>
       </div>
     </div>
   );

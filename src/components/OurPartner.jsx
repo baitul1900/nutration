@@ -28,12 +28,12 @@ const OurPartner = () => {
       <h3 className="text-center">
         <span>
           {" "}
-          <img src="/src/assets/img/lineicon-left.svg" alt="" />{" "}
+          <img src="/src/assets/img/lineicon-left.svg" className="img-fluid line-mark" alt="" />{" "}
         </span>
         আমাদের অংশীদার
         <span>
           {" "}
-          <img src="/src/assets/img/line-icon.svg" alt="" />{" "}
+          <img src="/src/assets/img/line-icon.svg" className="img-fluid line-mark" alt="" />{" "}
         </span>
       </h3>
 

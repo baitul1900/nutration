@@ -36,7 +36,7 @@ body {
 }
 
 .hero-container {
-  padding-top: 72px;
+  padding-top: 144px;
   padding-bottom: 80px;
 }
 
@@ -365,6 +365,28 @@ footer {
   font-size: 16px;
   font-weight: 400;
 }
+
+.counter-container {
+  margin-top: 56px;
+  background: var(--primaryBodyColor);
+  padding-block: 64px;
+}
+
+.counter-container .card {
+  padding-block: 40px;
+}
+
+.fig-number {
+  font-size: 40px;
+  color: var(--buttonColor);
+  font-weight: 600;
+}
+
+.counter-title {
+  font-size: var(--tweenty);
+  color: var(--headingColor);
+  font-weight: 500;
+}
 /* responsive style breakpoint */
 @media only screen and (max-width: 770px) {
   .our-activity-container h3 {
@@ -388,7 +410,19 @@ footer {
 
   .pos-one {
     position: static;
-    margin: auto 50px;
+    /* margin: auto 50px; */
     padding-bottom: 20px;
+  }
+
+  .line-mark {
+    display: none;
+  }
+
+  .fst-column .container h1 {
+    font-size: 36px;
+  } 
+
+  .bmi-ratemt p{
+    margin-bottom: 0rem !important;
   }
 }

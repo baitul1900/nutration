@@ -29,7 +29,7 @@ const HeroContainer = () => {
                                         <h1>{item.title}</h1>
                                         <p>{item.description}</p>
 
-                                        <Link to={'/'} className="btn bmi-button">বিএমআই ক্যালকুলেটর </Link>
+                                        <Link  to="/#bmi-calc-section" className="btn bmi-button">বিএমআই ক্যালকুলেটর </Link>
                                     </div>
                                 )
                             })

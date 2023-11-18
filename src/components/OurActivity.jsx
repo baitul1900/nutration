@@ -40,7 +40,7 @@ const OurActivity = () => {
     return (
         <section className='our-activity-sec'>
             <div className="container our-activity-container">
-                 <h3 className='text-center'> <span><img src="/src/assets/img/lineicon-left.svg" alt="" /></span> আমাদের কার্যক্রম <span><img src="/src/assets/img/line-icon.svg" alt="" /></span></h3>
+                 <h3 className='text-center'> <span><img src="/src/assets/img/lineicon-left.svg" className="img-fluid line-mark" alt="" /></span> আমাদের কার্যক্রম <span><img src="/src/assets/img/line-icon.svg" className="img-fluid line-mark" alt="" /></span></h3>
                 <div className="row d-flex justify-content-center align-items-center">
                     {
                         data.map((item, i)=> {
