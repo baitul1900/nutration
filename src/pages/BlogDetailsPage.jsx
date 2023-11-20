@@ -1,21 +1,16 @@
-import React, { Fragment, useEffect, useState } from 'react';
+import React, { Fragment } from 'react';
 import Navbar from '../components/Navbar';
 import Footer from '../components/Footer';
-import BlogSection from '../components/BlogSection';
+import BlogDetails from '../components/BlogDetails';
 
-const Blog = () => {
-
-    
-
-
-
+const BlogDetailsPage = () => {
     return (
         <Fragment>
             <Navbar/>
-            <BlogSection/>
+            <BlogDetails/>
             <Footer/>
         </Fragment>
     );
 };
 
-export default Blog;
+export default BlogDetailsPage;

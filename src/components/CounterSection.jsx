@@ -68,7 +68,7 @@ const CounterSection = () => {
   return (
     <div className="container-fluid counter-container">
       <div className="container">
-        <div className="row">
+        <div className="row gy-4">
           {counterData.map((item, id) => (
             <div
               className="col-sm-12 col-md-3 col-lg-4 col-xl-4"

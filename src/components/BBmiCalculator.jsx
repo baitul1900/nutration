@@ -177,7 +177,7 @@ const BBmiCalculator = () => {
           <div className="col-sm-12 col-md-4 col-lg-4 pt-1 align-self-center">
             <p className="bmi-rate pt-2 pb-2">{form.bmi}</p>
           </div>
-          <div className="col-sm-12 col-md-4 col-lg-4 pt-1 text-center">
+          <div className="col-sm-12 col-md-4 col-lg-4  text-center">
             <Button
               variant=""
               className="calcu-bmi-btn"
