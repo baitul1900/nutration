@@ -1,7 +1,7 @@
 import React, { Fragment, useEffect, useState } from 'react';
 import Navbar from '../components/Navbar';
 import Footer from '../components/Footer';
-import BlogSection from '../components/BlogSection';
+import BlogTabs from '../components/BlogTabs';
 
 const Blog = () => {
 
@@ -12,7 +12,7 @@ const Blog = () => {
     return (
         <Fragment>
             <Navbar/>
-            <BlogSection/>
+                <BlogTabs/>
             <Footer/>
         </Fragment>
     );

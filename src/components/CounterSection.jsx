@@ -86,7 +86,7 @@ const CounterSection = () => {
                         data-to={item['number']}
                         data-speed="1000"
                       >
-                        {item['number']}  % 
+                        {item['number']}
                       </span>
                       <span></span>
                       <p className="counter-title m-0">{item['short-description']}</p>

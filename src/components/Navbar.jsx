@@ -5,7 +5,7 @@ const Navbar = () => {
     <nav className="navbar navbar-expand-lg fixed-top">
       <div className="container">
         <a className="navbar-brand" href="#">
-          Logo
+          <img src="/src/assets/img/logo.png" className="img-fluid logo" alt="logo"/>
         </a>
         <button
           className="navbar-toggler"
@@ -30,9 +30,9 @@ const Navbar = () => {
               <li className="nav-item nav-link">
                   <NavLink to={'/blog'} className={({isActive})=>isActive ? 'active-item' : 'inactive'}>Blog</NavLink>
               </li>
-              <li className="nav-item nav-link">
+              {/* <li className="nav-item nav-link">
                   <NavLink to={'/activity'} className={({isActive})=>isActive ? 'active-item' : 'inactive'}>Activities</NavLink>
-              </li>
+              </li> */}
             </ul>
           </div>
         </div>

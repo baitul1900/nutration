@@ -29,6 +29,10 @@ body {
 .navbar {
   background-color: var(--primaryBodyColor);
 }
+.logo {
+  height: 60px;
+  width: 60px;
+}
 
 .navbar-nav .nav-item a {
   font-size: var(--tweenty);
