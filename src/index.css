@@ -502,3 +502,9 @@ footer {
 
   
 }
+
+
+
+.album img {
+  object-fit: cover;
+}

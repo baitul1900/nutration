@@ -5,7 +5,11 @@ const Navbar = () => {
     <nav className="navbar navbar-expand-lg fixed-top">
       <div className="container">
         <a className="navbar-brand" href="#">
-          <img src="/src/assets/img/logo.png" className="img-fluid logo" alt="logo"/>
+          <img
+            src="/src/assets/img/logo.png"
+            className="img-fluid logo"
+            alt="logo"
+          />
         </a>
         <button
           className="navbar-toggler"
@@ -22,17 +26,45 @@ const Navbar = () => {
           <div className="container">
             <ul className="navbar-nav d-lfex justify-content-end">
               <li className="nav-item nav-link">
-              <NavLink to={'/'} className={({isActive})=>isActive ? 'active-item' : 'inactive'}>Home</NavLink>
+                <NavLink
+                  to={"/"}
+                  className={({ isActive }) =>
+                    isActive ? "active-item" : "inactive"
+                  }
+                >
+                  Home
+                </NavLink>
               </li>
               <li className="nav-item nav-link">
-                  <NavLink to={'/ourDeatils'} className={({isActive})=>isActive ? 'active-item' : 'inactive'}>About Us</NavLink>
+                <NavLink
+                  to={"/ourDeatils"}
+                  className={({ isActive }) =>
+                    isActive ? "active-item" : "inactive"
+                  }
+                >
+                  About Us
+                </NavLink>
               </li>
               <li className="nav-item nav-link">
-                  <NavLink to={'/blog'} className={({isActive})=>isActive ? 'active-item' : 'inactive'}>Blog</NavLink>
+                <NavLink
+                  to={"/blog"}
+                  className={({ isActive }) =>
+                    isActive ? "active-item" : "inactive"
+                  }
+                >
+                  Blog
+                </NavLink>
               </li>
-              {/* <li className="nav-item nav-link">
-                  <NavLink to={'/activity'} className={({isActive})=>isActive ? 'active-item' : 'inactive'}>Activities</NavLink>
-              </li> */}
+              <li className="nav-item nav-link">
+                <NavLink
+                  to={"/gallery"}
+                  className={({ isActive }) =>
+                    isActive ? "active-item" : "inactive"
+                  }
+                >
+                  Gallery
+                </NavLink>
+              </li>
             </ul>
           </div>
         </div>
