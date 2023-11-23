@@ -3,6 +3,7 @@ import OwlCarousel from 'react-owl-carousel';
 import 'owl.carousel/dist/assets/owl.carousel.css';
 import 'owl.carousel/dist/assets/owl.theme.default.css';
 
+
 const TeamMember = () => {
 
     const teamMembers = [
@@ -32,7 +33,7 @@ const TeamMember = () => {
             designation: ' Designer'
           },
           {
-            imgSrc: '/src/assets/img/team-member.jpg',
+            imgSrc: '../assets/img/team-member.jpg',
             name: 'Jane Smith',
             designation: ' Designer'
           },
@@ -63,7 +64,7 @@ const TeamMember = () => {
     return (
       <div className='container about-container'>
       <h3 className='text-center'>
-        <span> <img src="/src/assets/img/lineicon-left.svg" className="img-fluid line-mark" alt="" /> </span>
+        <span> <img src="../assets/img/line-icon.svg" className="img-fluid line-mark" alt="" /> </span>
         আমাদের স্বেচ্ছাসেবী
         <span> <img src="/src/assets/img/line-icon.svg" className="img-fluid line-mark" alt="" /> </span>
       </h3>

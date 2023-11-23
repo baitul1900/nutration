@@ -48,7 +48,7 @@ const BlogTabs = () => {
 
   return (
     <div className="container mt-5 pt-5 about-container">
-      <div className="row mb-5">
+      <div className="row mb-5 mt-5 pt-5">
         <div className="col-sm-12 col-md-4 col-lg-6 col-xl-6 col-xxl-6">
           <h1>
             আমাদের পুষ্টিকর প্রচেষ্টা এবং <br /> সর্বশেষ স্বাস্থ্য উদ্যোগ

@@ -508,3 +508,27 @@ footer {
 .album img {
   object-fit: cover;
 }
+
+
+/* Loader.css */
+
+.loader-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100px; /* Adjust height as needed */
+}
+
+.loader {
+  border: 6px solid #f3f3f3; /* Light gray border */
+  border-top: 6px solid #3498db; /* Blue border on top */
+  border-radius: 50%;
+  width: 40px;
+  height: 40px;
+  animation: spin 1s linear infinite; /* Animation for spinning effect */
+}
+
+@keyframes spin {
+  0% { transform: rotate(0deg); }
+  100% { transform: rotate(360deg); }
+}

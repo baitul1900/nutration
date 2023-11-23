@@ -2,6 +2,7 @@ import axios from 'axios';
 import React, { useEffect, useState } from 'react';
 import { Link } from 'react-router-dom';
 
+
 const BlogSection = () => {
     const [data, setData] = useState([]);
 
@@ -22,7 +23,7 @@ const BlogSection = () => {
     return (
         <div className="container mt-5 pt-5 about-container">
                 <div className="row gy-3">
-                <h3 className='text-center'> <span><img src="/src/assets/img/lineicon-left.svg" alt="" /></span> সাম্প্রতিক প্রবন্ধসমূহ <span><img src="/src/assets/img/line-icon.svg" alt="" /></span></h3>
+                <h3 className='text-center'> <span><img src='../assets/img/lineicon-left.svg' alt="" /></span> সাম্প্রতিক প্রবন্ধসমূহ <span><img src="/src/assets/img/line-icon.svg" alt="" /></span></h3>
 
                     {
                         data.map((item, id)=> {

@@ -112,7 +112,7 @@ const Footer = () => {
                             </div> 
 
                             <div className="col-12 mt-4">
-                            <Link className='text-decoration-none' to={'/'}> <a className="text-decoration-none text-light" href="" className='btn subscribe-btn w-100'>Subscribe</a></Link>
+                            <Link className='text-decoration-none btn subscribe-btn w-100  text-light' to={'/'}>Subscribe</Link>
                             </div>
                         </div>
                     </div>

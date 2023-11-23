@@ -9,6 +9,7 @@ const GalleryPage = () => {
         <div>
             <Navbar/>
             <Gallery/>
+            
             <Footer/>
         </div>
     );
