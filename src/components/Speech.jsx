@@ -10,7 +10,7 @@ const Speech = () => {
     const [loading, setLoading] = useState(true);
 
     useEffect(() => {
-        axios.get('/public/data.json')
+        axios.get('/data.json')
         .then((response)=> {
             setData(response.data.speech)
             setLoading(false);

@@ -6,7 +6,7 @@ const OutStroy = () => {
 
   useEffect(() => {
     axios
-      .get("/public/data.json")
+      .get("/data.json")
       .then((response) => {
         setData(response.data.ourStory);
       })

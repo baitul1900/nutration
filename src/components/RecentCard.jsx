@@ -7,7 +7,7 @@ const RecentCard = () => {
     const [activity, setActivity] = useState([]);
 
     useEffect(()=> {
-        axios.get('/public/data.json')
+        axios.get('/data.json')
         .then(response => {
             setActivity(response.data.recentActivity);
         })
@@ -22,7 +22,7 @@ const RecentCard = () => {
 
     return (
         <div className="container about-container">
-            <h3 className='text-center'> <span><img src="/src/assets/img/lineicon-left.svg" alt="" /></span> সাম্প্রতিক প্রবন্ধসমূহ <span><img src="/src/assets/img/line-icon.svg" alt="" /></span></h3>
+            <h3 className='text-center'> <span><img src="/lineicon-left.svg" alt="" /></span> সাম্প্রতিক প্রবন্ধসমূহ <span><img src="/line-icon.svg" alt="" /></span></h3>
 
             <div className="row gy-3">
 

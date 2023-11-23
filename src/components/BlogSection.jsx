@@ -9,7 +9,7 @@ const BlogSection = () => {
     useEffect(()=> {
 
         // Fetch data using Axios
-        axios.get('/public/data.json')
+        axios.get('/data.json')
         .then(response => {
             setData(response.data.blogPost);
         })
@@ -23,7 +23,7 @@ const BlogSection = () => {
     return (
         <div className="container mt-5 pt-5 about-container">
                 <div className="row gy-3">
-                <h3 className='text-center'> <span><img src='../assets/img/lineicon-left.svg' alt="" /></span> সাম্প্রতিক প্রবন্ধসমূহ <span><img src="/src/assets/img/line-icon.svg" alt="" /></span></h3>
+                <h3 className='text-center'> <span><img src='/lineicon-left.svg' alt="" /></span> সাম্প্রতিক প্রবন্ধসমূহ <span><img src="/line-icon.svg" alt="" /></span></h3>
 
                     {
                         data.map((item, id)=> {

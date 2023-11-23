@@ -8,27 +8,27 @@ const TeamMember = () => {
 
     const teamMembers = [
         {
-          imgSrc: '/src/assets/img/team-member.jpg',
+          imgSrc: '/team-member.jpg',
           name: 'John Doe',
           designation: 'Web Developer'
         },
         {
-          imgSrc: '/src/assets/img/team-member.jpg',
+          imgSrc: '/team-member.jpg',
           name: 'Jane Smith',
           designation: 'UI/UX Designer'
         },
         {
-            imgSrc: '/src/assets/img/team-member.jpg',
+            imgSrc: '/team-member.jpg',
             name: 'Jane Smith',
             designation: ' Designer'
           },
           {
-            imgSrc: '/src/assets/img/team-member.jpg',
+            imgSrc: '/team-member.jpg',
             name: 'Jane Smith',
             designation: ' Designer'
           },
           {
-            imgSrc: '/src/assets/img/team-member.jpg',
+            imgSrc: '/team-member.jpg',
             name: 'Jane Smith',
             designation: ' Designer'
           },
@@ -66,7 +66,7 @@ const TeamMember = () => {
       <h3 className='text-center'>
         <span> <img src="../assets/img/line-icon.svg" className="img-fluid line-mark" alt="" /> </span>
         আমাদের স্বেচ্ছাসেবী
-        <span> <img src="/src/assets/img/line-icon.svg" className="img-fluid line-mark" alt="" /> </span>
+        <span> <img src="/line-icon.svg" className="img-fluid line-mark" alt="" /> </span>
       </h3>
       <div className="row g-0">
         <div className="col">

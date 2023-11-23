@@ -10,7 +10,7 @@ const BlogTabs = () => {
   useEffect(() => {
     // Fetch data using Axios
     axios
-      .get("/public/data.json")
+      .get("/data.json")
       .then((response) => {
         setData(response.data.blogPost);
       })
@@ -22,7 +22,7 @@ const BlogTabs = () => {
   useEffect(() => {
     // Fetch data using Axios
     axios
-      .get("/public/data.json")
+      .get("/data.json")
       .then((response) => {
         setDataNews(response.data.blogPostNews);
       })
@@ -34,7 +34,7 @@ const BlogTabs = () => {
   useEffect(() => {
     // Fetch data using Axios
     axios
-      .get("/public/data.json")
+      .get("/data.json")
       .then((response) => {
         setDataActivity(response.data.blogPostActivity);
       })

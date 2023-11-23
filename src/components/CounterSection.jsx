@@ -6,7 +6,7 @@ const CounterSection = () => {
 
   useEffect(() => {
     axios
-      .get("/public/data.json")
+      .get("/data.json")
       .then((response) => {
         setCounterData(response.data.counterTable);
       })

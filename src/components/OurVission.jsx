@@ -5,7 +5,7 @@ const OurVission = () => {
     const [data, setData] = useState([]);
 
     useEffect(()=> {
-        axios.get('/public/data.json')
+        axios.get('/data.json')
         .then(response => {
             setData(response.data.ourVission)
         })

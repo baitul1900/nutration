@@ -11,7 +11,7 @@ const CureAndPrevention = () => {
   useEffect(() => {
     // Fetch data using Axios
     axios
-      .get("/public/data.json")
+      .get("data.json")
       .then((response) => {
         setIssues(response.data.issues);
       })
@@ -22,7 +22,7 @@ const CureAndPrevention = () => {
 
   useEffect(() => {
     axios
-      .get("/public/data.json")
+      .get("/data.json")
       .then((reposne) => {
         setResolve(reposne.data.resolve);
       })
@@ -37,7 +37,7 @@ const CureAndPrevention = () => {
         {" "}
         <span>
           <img
-            src="/src/assets/img/lineicon-left.svg"
+            src="/lineicon-left.svg"
             className="img-fluid line-mark"
             alt=""
           />
@@ -45,7 +45,7 @@ const CureAndPrevention = () => {
         অপুষ্টির কারণে সমস্যা ও করণীয় সমূহ{" "}
         <span>
           <img
-            src="/src/assets/img/line-icon.svg"
+            src="/line-icon.svg"
             className="img-fluid line-mark"
             alt=""
           />
@@ -64,7 +64,7 @@ const CureAndPrevention = () => {
                 >
                   <li className="list-group-item image-list d-block d-md-none d-sm-none d-lg-none d-xl-none">
                     <img
-                      src="/src/assets/img/thik-mark.svg"
+                      src="/thik-mark.svg"
                       className="img-fluid svg-thik"
                       alt=""
                     />
@@ -72,7 +72,7 @@ const CureAndPrevention = () => {
                   <li className="list-group-item text-start text-sm-start text-md-start text-lg-end text-xl-end">{issue.description}</li>
                   <li className="list-group-item d-none d-md-block d-sm-block d-lg-block d-xl-block">
                     <img
-                      src="/src/assets/img/thik-mark.svg"
+                      src="/thik-mark.svg"
                       className="img-fluid svg-thik"
                       alt=""
                     />
@@ -84,7 +84,7 @@ const CureAndPrevention = () => {
 
           <div className="col-sm-12 col-md-12 col-lg-4 col-xl-4">
             <img
-              src="/src/assets/img/opusty.png"
+              src="/opusty.png"
               className="img-fluid"
               alt="image"
             />
@@ -100,7 +100,7 @@ const CureAndPrevention = () => {
                 >
                   <li className="list-group-item image-list">
                     <img
-                      src="/src/assets/img/thik-mark.svg"
+                      src="/thik-mark.svg"
                       className="img-fluid svg-thik"
                       alt=""
                     />

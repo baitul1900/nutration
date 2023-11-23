@@ -4,28 +4,28 @@ import PhotoAlbum from "react-photo-album";
 
 const Gallery = () => {
   const photos = [
-    { src: "/src/assets/img/1.jpg", width: 1500, height: 600 },
-    { src: "/src/assets/img/02.jpg", width: 600, height: 600 },
+    { src: "/1.jpg", width: 1500, height: 600 },
+    { src: "/02.jpg", width: 600, height: 600 },
   ];
 
   const photosTwo = [
-    { src: "/src/assets/img/03.jpg", width: 1000, height: 900 },
-    { src: "/src/assets/img/04.jpg", width: 800, height: 900 },
-    { src: "/src/assets/img/05.jpg", width: 1800, height: 900 },
+    { src: "/03.jpg", width: 1000, height: 900 },
+    { src: "/04.jpg", width: 800, height: 900 },
+    { src: "/05.jpg", width: 1800, height: 900 },
   ];
 
   const photosThree = [
-    { src: "/src/assets/img/06.jpg", width: 1600, height: 600 },
+    { src: "/06.jpg", width: 1600, height: 600 },
   ];
 
   const photosFour = [
-    { src: "/src/assets/img/07.jpg", width: 800, height: 600 },
-    { src: "/src/assets/img/08.jpg", width: 600, height: 600 },
+    { src: "/07.jpg", width: 800, height: 600 },
+    { src: "/08.jpg", width: 600, height: 600 },
   ];
 
   const photosFive = [
-    { src: "/src/assets/img/09.jpg", width: 600, height: 600 },
-    { src: "/src/assets/img/10.jpg", width: 800, height: 600 },
+    { src: "/09.jpg", width: 600, height: 600 },
+    { src: "/10.jpg", width: 800, height: 600 },
   ];
 
   const [data, setData] = useState([]);

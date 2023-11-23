@@ -9,7 +9,7 @@ const CurePreventionOtipusti = () => {
   useEffect(() => {
     // Fetch data using Axios
     axios
-      .get("/public/data.json")
+      .get("/data.json")
       .then((response) => {
         setIssues(response.data.issueOtiPusti);
       })
@@ -21,7 +21,7 @@ const CurePreventionOtipusti = () => {
   useEffect(() => {
     // Fetch data using Axios
     axios
-      .get("/public/data.json")
+      .get("/data.json")
       .then((response) => {
         setResolve(response.data.resolveOtipusti);
       })
@@ -36,7 +36,7 @@ const CurePreventionOtipusti = () => {
         {" "}
         <span>
           <img
-            src="/src/assets/img/lineicon-left.svg"
+            src="img/lineicon-left.svg"
             className="img-fluid line-mark"
             alt=""
           />
@@ -44,7 +44,7 @@ const CurePreventionOtipusti = () => {
         অতিপুষ্টির কারণে সমস্যা ও করণীয় সমূহ{" "}
         <span>
           <img
-            src="/src/assets/img/line-icon.svg"
+            src="/line-icon.svg"
             className="img-fluid line-mark"
             alt=""
           />
@@ -63,7 +63,7 @@ const CurePreventionOtipusti = () => {
                 >
                   <li className="list-group-item d-block d-md-none d-sm-none d-lg-none d-xl-none">
                     <img
-                      src="/src/assets/img/thik-mark.svg"
+                      src="/thik-mark.svg"
                       className="img-fluid svg-thik"
                       alt=""
                     />
@@ -71,7 +71,7 @@ const CurePreventionOtipusti = () => {
                   <li className="list-group-item text-start text-sm-start text-md-start text-lg-end text-xl-end">{issues.content}</li>
                   <li className="list-group-item d-none d-md-block d-sm-block d-lg-block d-xl-block">
                     <img
-                      src="/src/assets/img/thik-mark.svg"
+                      src="/thik-mark.svg"
                       className="img-fluid svg-thik"
                       alt=""
                     />
@@ -83,7 +83,7 @@ const CurePreventionOtipusti = () => {
 
           <div className="col-sm-12 col-md-12 col-lg-4 col-xl-4">
             <img
-              src="/src/assets/img/otipusty.png"
+              src="/otipusty.png"
               className="img-fluid"
               alt="image"
             />
@@ -99,7 +99,7 @@ const CurePreventionOtipusti = () => {
                 >
                   <li className="list-group-item image-list">
                     <img
-                      src="/src/assets/img/thik-mark.svg"
+                      src="/thik-mark.svg"
                       className="img-fluid svg-thik"
                       alt=""
                     />

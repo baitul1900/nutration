@@ -6,7 +6,7 @@ const BlogDetails = () => {
     const [blog, setBlog] = useState([]);
 
     useEffect(()=> {
-        axios.get('/public/data.json')
+        axios.get('/data.json')
         .then(response => {
             setBlog(response.data.blogDetails);
         })

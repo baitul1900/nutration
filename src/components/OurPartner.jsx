@@ -3,22 +3,22 @@ import React from "react";
 const OurPartner = () => {
   const OurPartner = [
     {
-      imgSrc: "/src/assets/img/partership-with.jpg",
+      imgSrc: "/partership-with.jpg",
     },
     {
-      imgSrc: "/src/assets/img/partership-with.jpg",
+      imgSrc: "/partership-with.jpg",
     },
     {
-      imgSrc: "/src/assets/img/partership-with.jpg",
+      imgSrc: "/partership-with.jpg",
     },
     {
-      imgSrc: "/src/assets/img/partership-with.jpg",
+      imgSrc: "/partership-with.jpg",
     },
     {
-      imgSrc: "/src/assets/img/partership-with.jpg",
+      imgSrc: "/partership-with.jpg",
     },
     {
-      imgSrc: "/src/assets/img/partership-with.jpg",
+      imgSrc: "/partership-with.jpg",
     },
     // Add more team members as needed
   ];
@@ -28,12 +28,12 @@ const OurPartner = () => {
       <h3 className="text-center">
         <span>
           {" "}
-          <img src="/src/assets/img/lineicon-left.svg" className="img-fluid line-mark" alt="" />{" "}
+          <img src="/lineicon-left.svg" className="img-fluid line-mark" alt="" />{" "}
         </span>
         আমাদের অংশীদার
         <span>
           {" "}
-          <img src="/src/assets/img/line-icon.svg" className="img-fluid line-mark" alt="" />{" "}
+          <img src="/line-icon.svg" className="img-fluid line-mark" alt="" />{" "}
         </span>
       </h3>
 
