@@ -7,7 +7,7 @@ const BmiCalc = () => {
         {" "}
         <span>
           <img
-            src="/src/assets/img/lineicon-left.svg"
+            src="/lineicon-left.svg"
             className="img-fluid line-mark"
             alt=""
           />
@@ -15,7 +15,7 @@ const BmiCalc = () => {
         বিএমআই এর সাহায্যে পুষ্টির অবস্থা{" "}
         <span>
           <img
-            src="/src/assets/img/line-icon.svg"
+            src="/line-icon.svg"
             className="img-fluid line-mark"
             alt=""
           />

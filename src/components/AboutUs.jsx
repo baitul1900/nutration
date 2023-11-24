@@ -16,7 +16,7 @@ const AboutUs = () => {
           {" "}
           <span>
             <img
-              src="/src/assets/img/lineicon-left.svg"
+              src="/lineicon-left.svg"
               className="img-fluid line-mark"
               alt=""
             />
@@ -24,7 +24,7 @@ const AboutUs = () => {
           আমাদের সম্পর্কে জানুন{" "}
           <span>
             <img
-              src="/src/assets/img/line-icon.svg"
+              src="/line-icon.svg"
               className="img-fluid line-mark"
               alt=""
             />

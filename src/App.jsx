@@ -12,7 +12,7 @@ import GalleryPage from './pages/GalleryPage.jsx';
 
 const App = () => {
   return (
-    <BrowserRouter>
+    <BrowserRouter basename="/your-subdomain">
       <Routes>
         <Route path='/' element={<HomePage/>}/>
         <Route path='/ourDeatils' element={<OurDetails/>}/>

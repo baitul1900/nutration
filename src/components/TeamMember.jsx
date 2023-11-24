@@ -64,7 +64,7 @@ const TeamMember = () => {
     return (
       <div className='container about-container'>
       <h3 className='text-center'>
-        <span> <img src="../assets/img/line-icon.svg" className="img-fluid line-mark" alt="" /> </span>
+        <span> <img src="/line-icon.svg" className="img-fluid line-mark" alt="" /> </span>
         আমাদের স্বেচ্ছাসেবী
         <span> <img src="/line-icon.svg" className="img-fluid line-mark" alt="" /> </span>
       </h3>
